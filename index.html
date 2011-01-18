@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>LinguaFranca.js Demo</title>
+		<style>
+			.lf_translate { border-bottom: 1px dotted #000; cursor: pointer; }
+			#lf_translation_box { background: #ccc; padding: 2px 4px; }
+		</style>
+	</head>
+	<body>
+		<h1>LinguaFranca.js</h1>
+		
+		<p>The world, and the Web, do not exist in one language, solitary. By the very virtue of its structure, the Internet exists on a global level. The advent of this interconnectivity has brought about a new era of extra-linguality. In short, language is blurring.</p>
+		
+		<p>The genesis of this project involved <a href="http://www.quirksmode.org/blog/archives/2009/04/making_time_saf.html" title="Making &lt;time&gt; safe for historians" target="_blank">a blog post that I was reading by Peter-Paul Koch</a>. The author was discussing <a href="http://www.quirksmode.org/blog/archives/2009/04/making_time_saf.html##link20" target="_blank">Varronian years</a> and used the Latin term <span lang="la">fasti consulares</span>. I thought, "How helpful it would be if I were given a simple way to find the translation of that text." By the end of the night, I had a working early version of this script.</p>
+		
+		<h3>Usage</h3>
+		
+		<p>This script uses the <a href="http://code.google.com/apis/ajaxlanguage/" target="_blank">Google AJAX Language API</a>, so you'll need to include that in your page. It doesn't support translations between every language, so check out their list of <a href="http://code.google.com/apis/ajaxlanguage/documentation/##SupportedPairs" target="_blank">supported language pairs</a>.</p>
+		
+		<p>Include this somewhere on your page:<br />
+			<code>&lt;script src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;</code><br />
+			<code>&lt;script&gt;google.load(&quot;language&quot;,&quot;1&quot;);&lt;/script&gt;</code><br />
+			<code>&lt;script src=&quot;linguafranca.js&quot;&gt;&lt;/script&gt;</code>
+		</p>
+		
+		<p>Then just apply the <code>lang=""</code> attribute to any of your HTML tags, using the appropriate <a href="http://code.google.com/apis/ajaxlanguage/documentation/reference.html##LangNameArray" target="_blank">language code</a>. You can specify your page's native language by applying that same attribute to the HTML tag, or the script can attempt to automatic detection. The script will go through your document, applying a class of <code>lf_translate</code> to those elements, allowing you to style them however you want. Then, just click to toggle between original and translated text. It's THAT simple.</p>
+		
+		<h3>Examples</h3>
+		
+		<p>I love to eat <span lang="fr">cr&eacute;pes</span> with <span lang="es">queso</span> and some <span lang="de">apfelmus</span>, <span lang="it">capisce</span>?</p>
+		
+		<p lang="es">Mis palabras son en espa&ntilde;ol.</p>
+		
+		<p lang="fr">Selon Hegel, <cite>«&#160;on croit ordinairement […] que ce qu'il y a de plus haut c'est l'ineffable… Mais c'est là une opinion superficielle et sans fondement&#160;; car en réalité l'ineffable c'est la pensée obscure, la pensée à l'état de fermentation, et qui ne devient claire que lorsqu'elle trouve le mot. Ainsi, le mot donne à la pensée son existence la plus haute et la plus vraie.&#160;»</cite> Il ajoute ailleurs&#160;: <cite>«&#160;C'est dans les mots que nous pensons.&#160;»</cite> Bergson pense que le langage ne nous est pas totalement acquis car on ne peut pas tout dire avec, on ne peut clairement expliquer un sentiment. C'est là notre seul problème.</p>
+		
+		<script src="http://www.google.com/jsapi"></script>
+		<script>google.load("language","1");</script>
+		<script src="linguafranca.js"></script>
+	</body>
+</html>
