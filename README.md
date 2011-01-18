@@ -9,8 +9,10 @@ The genesis of this project involved a blog post that I was reading by Peter-Pau
 This script uses the Google AJAX Language API, so you'll need to include that in your page. It doesn't support translations between every language, so check out their list of supported language pairs.
 
 Include this somewhere on your page:
-<script src="http://www.google.com/jsapi"></script>
-<script>google.load("language","1");</script>
-<script src="linguafranca.js"></script>
+
+    <script src="http://www.google.com/jsapi"></script>
+    <script>google.load("language","1");</script>
+    <script src="linguafranca.js"></script>
+
 
 Then just apply the lang="" attribute to any of your HTML tags, using the appropriate language code. You can specify your page's native language by applying that same attribute to the HTML tag, or the script can attempt to automatic detection. The script will go through your document, applying a class of lf_translate to those elements, allowing you to style them however you want. Then, just click to toggle between original and translated text. It's THAT simple.
