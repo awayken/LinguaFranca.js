@@ -15,4 +15,4 @@ Include this somewhere on your page:
     <script src="linguafranca.js"></script>
 
 
-Then just apply the lang="" attribute to any of your HTML tags, using the appropriate language code. You can specify your page's native language by applying that same attribute to the HTML tag, or the script can attempt to automatic detection. The script will go through your document, applying a class of lf_translate to those elements, allowing you to style them however you want. Then, just click to toggle between original and translated text. It's THAT simple.
+Then just apply the lang="" attribute to any of your HTML tags, using the appropriate language code. You can specify your page's native language by applying that same attribute to the HTML tag, or the script can attempt automatic detection. The script will go through your document, applying a class of lf_translate to those elements, allowing you to style them however you want. Then, just hover to see the translated text. It's THAT simple.
