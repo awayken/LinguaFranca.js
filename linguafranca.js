@@ -1,6 +1,8 @@
 /*jslint white: true, browser: true, onevar: true, undef: true, nomen: true, eqeqeq: true, plusplus: true, bitwise: true, regexp: true, newcap: true, immed: true, strict: true */
 /*global google: false, window: false */
 
+/* https://code.google.com/apis/language/translate/overview.html */
+
 (function () {
 	"use strict";
 	
